@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root{
+    --main-font:font-family: 'Roboto', sans-serif;
+    --secondaryColor:rgb(253, 181, 46);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+
+}
+.navbar-nav li a{
+    color: black !important;
+    font-weight: 700;
+    text-align: right;
+    font-family: var(--main-font);
+}
+.navbar-toggler{
+    outline: none !important;
+}
+header {
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(to bottom,rgba(243, 234, 234,0.4),rgba(235, 229, 229,0.2)),url('assets/pexels-photomix-company-106344.jpg')  ;
+    background-size: cover ;
+    
+   
+}
+.navbar-brand{
+    font-size:50px ;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+}
+#span{
+    font-size: 15px ;
+    font-weight: 100;
+    font-family: var(--main-font);
+    letter-spacing: 0;
+}
+
+#title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 100px;
+    font-family: var(--main-font);
+    
+
+}
+#cover{
+    position: absolute;
+}
+#subtitle{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-family: var(--main-font);
+
+}
+#subtext{
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 400;
+}
+#link{
+    background:transparent;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--main-font);
+    color:white;
+}
+
+
+#cards{
+
+    box-sizing: border-box;
+    position: relative;
+}
+#domain{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--main-font);
+    color: rgb(73, 73, 73);
+
+}
+#arrow{
+    background-color:rgb(204, 201, 201) ;
+    position: absolute;
+    bottom:0;
+    right:0;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+}
+#arrow:hover{
+    background-color:var(--secondaryColor);
+
+}
+#contact{
+    
+    
+    background-image: linear-gradient(315deg, rgba(0,0,0,0.4), rgba(65,65,65,0.5) ),url('assets/pexels-lex-photography-1109543.jpg');
+    width: 100%;
+    color: white;
+    background-size: cover;
+}
+
+
+.brand{
+    
+    font-size:25px ;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+    
+    padding: 25px;
+    
+    padding-left: 0;
+
+
+
+}
+.brand a {
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+}
+.details{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.counter{
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 700;
+    line-height: 33px;
+    font-size: 55px;
+    color: var(--secondaryColor);
+    text-align: left;
+
+    
+} 
+.dom {
+    opacity: 0;
+
+}
+.dom.animated {
+    opacity: 1;
+}
+
+
+.sup{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    color: var(--secondaryColor);
+    
+    
+    
+}
+.team-member img{
+    width: 250px;
+    height: 180px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:var(--secondaryColor);
+    border-radius: 12px;
+  }
+.pic:hover .overlay {
+    opacity: 0.8;
+  }
+#list{
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#list li{
+    display: inline;
+    text-decoration: none;
+}
+#list li i{
+    font-size: 20px;
+    color: black;
+    padding-right:4px ;
+}
+.name{
+    font-size: 20px;
+    
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.double-arrow{
+    color: var(--secondaryColor);
+    font-size: 30px;
+}
+.team-img{
+    border-radius: 50%;
+}
+.team-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 100px;
+    font-family: var(--main-font);
+
+}
+.team-sub{
+    letter-spacing: 2px;
+    font-size:30px;
+    color:  rgb(73, 73, 73);
+}
+.list a{
+    color:  rgb(248, 245, 245);
+    text-decoration: none;
+}
+#list-icon{
+    list-style: none;
+} 
+#list-icon li{
+    display: inline;
+}
+#list-icon li i{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(248, 245, 245);
+    padding: 5px;
+    padding-right: 4px;
+}
+#list-icon li i:hover{
+    color: black;
+    transform: scale(1.4);
+
+}
+.back-to-top{
+    display: block;
+    justify-content: center;
+    position: fixed;
+    background-color: var(--secondaryColor);
+    width: 40px;
+    height: 50px;
+    border-radius: 5px;
+    z-index: 99;
+    bottom: 20px;
+    right: 30px;
+
+    
+
+}
+
+.back-to-top i{
+    text-align: center;
+    color:rgb(248, 245, 245);
+    font-size: 20px;
+    position: absolute;
+    padding: 16px;
+    margin: auto;
+}
+.blog-box{
+    box-sizing: border-box;
+    border:10px solid var(--secondaryColor)
+}
+.blog-box:hover{
+    border-color:rgb(204, 201, 201);
+}
+.blog-list{
+    list-style: none;
+
+}
+.blog-list li{
+    display: inline;
+    padding-right: 4px;
+    
+}
+.blog-list li i{
+    color: rgb(73, 73, 73);
+    
+}
+.date{
+    color: black;
+    font-weight: bold;
+}
+.about-img{
+    margin-top: 40px;
+    padding: 5px 0;
+    text-align: center;
+    
+}
+.about-img img{
+    border-radius: 50%;
+}
+.about-img img:hover{
+    opacity: 0.5;
+}
+.readmore a{
+    color:var(--secondaryColor);
+}
